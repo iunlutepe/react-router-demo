@@ -37,3 +37,37 @@ export const playerLoader = async ({ params }) => {
 
   return player;
 };
+
+export const getTeams = async () => {
+    try {
+        const res = await API.get("/footballTeams");
+        return res.data;
+    } catch (err) {
+        console.error(err);
+        return [];
+    }
+};
+
+export const teamsLoader = async () => {
+    return getTeams()
+}
+
+export const getTeamById = (id) => {
+    return API.get(`/footballTeams/${id}`)
+        .then((res) => res.data)
+        .catch((err) => {
+            console.error(`Error fetching team ${id}:`, err);
+            return null;
+        });
+};
+
+export const teamLoader = async ({ params }) => {
+    const { id } = params;
+    const team = await getTeamById(id);
+
+    if (id === '2') {
+        throw new Error("team not found")
+    }
+
+    return team;
+};

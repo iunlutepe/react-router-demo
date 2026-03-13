@@ -9,7 +9,8 @@ const Home = () => {
             <img src={`/imgs/player.png`} alt="" style={{height: '230px'}}/>
                 <h1 style={{margin: '0'}}>React router outlet demo</h1>
             <div style={{display: 'flex', justifyContent: 'center'}}>
-                <button style={{fontSize: '16px', height: '24px', width: '125px', cursor: 'pointer', color: 'white', background: '#f1356d', borderRadius: '6px', border: '1px solid #f1356d'}} onClick={() => navigate('/players/player/1')}>Go to players</button>
+                <button style={{fontSize: '16px', height: '24px', width: '125px', cursor: 'pointer', color: 'white', background: '#f1356d', borderRadius: '6px', border: '1px solid #f1356d'}} onClick={() => navigate('/players/player/1')}>Players</button>
+                <button style={{fontSize: '16px', height: '24px', width: '125px', cursor: 'pointer', color: 'white', background: '#f1356d', borderRadius: '6px', border: '1px solid #f1356d', marginLeft: '16px'}} onClick={() => navigate('/teams')}>Teams</button>
             </div>
         </div>
     )

@@ -19,7 +19,7 @@ body{
   background-color: #f7f7f7;
 }
 
-.player-card {
+.card {
   border: 1px solid #f1356d;
   margin-bottom: 6px;
   border-radius: 6px;
@@ -33,7 +33,7 @@ body{
   color: white  ;
 }
 
-.players-container{
+.container-2{
   display: flex;
   flex-direction: column;
   align-items: space-between;

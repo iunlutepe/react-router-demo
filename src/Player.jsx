@@ -5,7 +5,7 @@ const player = useLoaderData()
 
 return <div style={{display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
             <div>
-                <img src={`/imgs/${player.picture}`} style={{height: '300px', width: '300px'}} alt=""/>
+                <img src={`/imgs/${player?.picture}`} style={{height: '300px', width: '300px'}} alt=""/>
             </div>
                 <div style={{height: '300px', display: 'flex', flexDirection: 'column', justifyContent: 'center', width: '250px'}} >
                     <p>Full name: {player.fullName}</p>
