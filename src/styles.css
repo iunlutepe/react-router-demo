@@ -1,0 +1,43 @@
+body{
+    background-color: #fff0f5;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 350px;
+  width: 700px;
+  border: 1px solid #f1356d;
+  padding: 12px;
+  align-content: center;
+  box-shadow: 3px 4px 10px grey;
+  border-radius: 6px;
+  justify-self: center;
+  margin-top: 25px;
+  background-color: #f7f7f7;
+}
+
+.player-card {
+  border: 1px solid #f1356d;
+  margin-bottom: 6px;
+  border-radius: 6px;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f1356d;
+  color: white  ;
+}
+
+.players-container{
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  justify-content: space-evenly;
+  height: 100%;
+
+}
